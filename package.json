@@ -1,0 +1,14 @@
+{
+  "name": "createbase64img",
+  "version": "1.0.0",
+  "description": "convert img to base64 code",
+  "main": "index.js",
+  "scripts": {
+    "test": "createbase64img"
+  },
+  "author": "WangChloe",
+  "license": "MIT",
+  "dependencies": {
+    "base64-img": "^1.0.4"
+  }
+}
