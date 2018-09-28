@@ -9,6 +9,9 @@
   "author": "WangChloe",
   "license": "MIT",
   "dependencies": {
-    "base64-img": "^1.0.4"
+    "art-template": "^4.13.1",
+    "base64-img": "^1.0.4",
+    "commander": "^2.18.0",
+    "mkdirp": "^0.5.1"
   }
 }
