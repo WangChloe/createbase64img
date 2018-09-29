@@ -1,12 +1,5 @@
 {{each items item index}}
-.icon-{{item.name}}{
-    width: {{item.value.width/(2*rempx)}}rem;
-    height: {{item.value.height/(2*rempx)}}rem;
-    background-size: {{width/(2*rempx)}}rem {{height/(2*rempx)}}rem;
-    background-image: url({{pngname}}.png);
-    {{if item.value.width == width }}background-position: 0 {{(item.value.y / (height - item.value.height))* 100}}%;
-    {{else if item.value.height == height}}background-position: {{(item.value.x / (width - item.value.width))* 100}}% 0;
-    {{else}}background-position: {{(item.value.x / (width - item.value.width))* 100}}% {{(item.value.y / (height - item.value.height))*100}}%;{{/if}}
+.base64-{{item.pngname}}{
+    background-image: url('{{item.code}}');
 }
 {{/each}}
-.base64-{{item.name}}
