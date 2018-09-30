@@ -1,40 +1,28 @@
 #!/usr/bin/env node
-// const program = require('commander');
+const program = require('commander');
 const createbase64img = require('./src/main');
-// const package = require('./package');
+const package = require('./package');
 
-// program.version(package.version)
-//     .usage('<command>')
-//     // .option('-s, --sass','output sass file')
-//     // .option('-p, --padding [number]', 'output sprite icon padding spacing')
-//     // .option('-j, --json','output json file');
+program.version(package.version)
+    .usage('<command>')
 
-// program
-//     .command('createbase64img')
-//     // .description('create pc or mibile sprite image and styles')
-//     .action(function(){
-        // let params = {
-        //     'type' : type == 'pc' ? 1 : 2,
-        //     'sass' : program.sass ? true : false,
-        //     'json' : program.json ? true : false,
-        //     'padding' : program.padding && !isNaN(Number(program.padding)) ? Number(program.padding) : 5,
-        //     'algorithm' : options ? options : 'top-down'
-        // };
-        //console.log(params);
+program
+    .command('base64')
+    .description('convert img to base64 code')
+    .action(function(){
         createbase64img();
-//     });
+    });
+
+program.on('--help',function(){
+    console.log('');
+    console.log('  Example: ');
+    console.log('');
+    console.log('  $ create base64');
+    console.log('');
+});
 
 
-// program.on('--help',function(){
-//     console.log('');
-//     console.log('  Example: ');
-//     console.log('');
-//     console.log('  $ createbase64img');
-//     console.log('');
-// });
-
-
-// program.parse(process.argv);
-// if(!program.args.length){
-//     program.help();
-// }
+program.parse(process.argv);
+if(!program.args.length){
+    program.help();
+}

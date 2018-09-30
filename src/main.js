@@ -3,14 +3,14 @@ const mkdirp = require('mkdirp');
 const template = require('art-template');
 const fs = require('fs');
 const path = require('path');
+const open = require('open');
 
 const pwd = process.cwd();
 
 function createbase64img() {
     var length;
-    var i;
     var base64Imgs = [];
-    var imgs, img, index, el, abPath;
+    var imgs;
 
     imgs = makeIconSrc();
     length = imgs.length;
@@ -33,7 +33,7 @@ function createbase64img() {
             if (index == length - 1) {
                 mkdirp.sync(path.join(pwd, 'dist'));
                 makeOutputFile(base64Imgs);
-                console.log('convert success!');
+                console.log('Convert success! Open your dist folder!');
             }
         })
     })
@@ -45,6 +45,7 @@ function makeOutputFile(base64Imgs) {
 
     var css = template(path.join(__dirname, '../template/tpl.css'), data);
     fs.writeFileSync(path.join(pwd, 'dist') + '/base64img.css', css);
+    open(path.join(pwd, 'dist/base64img.css'));
 }
 
 function makeIconSrc() {

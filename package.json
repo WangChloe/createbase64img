@@ -1,10 +1,13 @@
 {
   "name": "createbase64img",
-  "version": "1.0.0",
+  "version": "1.0.7",
   "description": "convert img to base64 code",
   "main": "index.js",
   "scripts": {
     "test": "createbase64img"
+  },
+  "bin": {
+    "create": "./index.js"
   },
   "author": "WangChloe",
   "license": "MIT",
@@ -12,6 +15,12 @@
     "art-template": "^4.13.1",
     "base64-img": "^1.0.4",
     "commander": "^2.18.0",
-    "mkdirp": "^0.5.1"
-  }
+    "mkdirp": "^0.5.1",
+    "open": "0.0.5"
+  },
+  "keywords": [
+    "base64",
+    "image",
+    "nodejs小工具"
+  ]
 }
