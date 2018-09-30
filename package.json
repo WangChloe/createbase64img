@@ -1,6 +1,6 @@
 {
   "name": "createbase64img",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "convert img to base64 code",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,16 @@
   "bin": {
     "create": "./index.js"
   },
-  "author": "WangChloe",
+  "author": {
+    "name": "WangChloe",
+    "email": "wangchloe@yeah.net",
+    "url": "https://github.com/WangChloe"
+  },
+  "repository" : {
+    "type" : "git" ,
+    "url" : "https://github.com/WangChloe/createbase64img" 
+  },
+  "homepage": "https://github.com/WangChloe/createbase64img",
   "license": "MIT",
   "dependencies": {
     "art-template": "^4.13.1",
