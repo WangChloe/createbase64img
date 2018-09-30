@@ -1,4 +1,6 @@
-# createbase64img ![https://www.npmjs.com/package/createbase64img](https://img.shields.io/badge/npm-v1.0.8-brightgreen.svg)
+# createbase64img 
+[![npm](https://img.shields.io/badge/npm-v1.0.8-brightgreen.svg)](https://www.npmjs.com/package/createbase64img)
+
 
 **Install link**: [createbase64img](https://www.npmjs.com/package/createbase64img)
 
